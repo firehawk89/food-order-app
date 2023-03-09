@@ -22,11 +22,11 @@ button {
   padding: 0.5rem 2rem;
   border-radius: 25px;
   font-weight: bold;
+  color: white;
 
   &:hover,
   &:active {
     background-color: #641e03;
     border-color: #641e03;
-    color: white;
   }
 }
