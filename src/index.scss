@@ -13,3 +13,20 @@ body {
 html {
   font-family: "Noto Sans JP", sans-serif;
 }
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  font-weight: bold;
+
+  &:hover,
+  &:active {
+    background-color: #641e03;
+    border-color: #641e03;
+    color: white;
+  }
+}
