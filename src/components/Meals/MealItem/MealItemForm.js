@@ -4,23 +4,23 @@ import Input from "../../UI/Input";
 import styles from "./MealItemForm.module.scss";
 
 const MealItemForm = (props) => {
-  const [amountIsValid, setAmountIsValid] = useState(true);
+  /* const [amountIsValid, setAmountIsValid] = useState(true); */
   const amountInputRef = useRef();
 
   const submitHandler = (event) => {
     event.preventDefault();
 
-    const enteredAmount = amountInputRef.current.value;
+    //const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +amountInputRef.current.value;
 
-    if (
+    /* if (
       enteredAmount.trim().length === 0 ||
       enteredAmountNumber < 1 ||
       enteredAmountNumber > 5
     ) {
       setAmountIsValid(false);
       return;
-    }
+    } */
 
     props.onAddToCart(enteredAmountNumber);
   };
@@ -40,7 +40,7 @@ const MealItemForm = (props) => {
         }}
       />
       <button className={styles["form__button"]}>+ Add</button>
-      {!amountIsValid && <p>Please, enter a valid amount (1-5)!</p>}
+      {/* {!amountIsValid && <p>Please, enter a valid amount (1-5)!</p>} */}
     </form>
   );
 };
