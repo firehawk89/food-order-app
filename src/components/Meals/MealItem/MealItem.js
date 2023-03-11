@@ -22,10 +22,10 @@ const MealsItem = (props) => {
     <li className={styles.meal}>
       <div>
         <h3>{props.name}</h3>
-        <p className={styles.description}>{props.description}</p>
-        <span className={styles.price}>{price}</span>
+        <p className={styles["meal__description"]}>{props.description}</p>
+        <span className={styles["meal__price"]}>{price}</span>
       </div>
-      <div>
+      <div className={styles["meal__control"]}>
         <MealItemForm id={props.id} onAddToCart={addToCartHandler} />
       </div>
     </li>
